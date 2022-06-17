@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title></title>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 16px;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	line-height: 1.5;
+	min-height: 100vh;
+	font-size: 1.25rem;
+}
+
+*:focus {
+	outline: none;
+}
+
+/* body > div {
+	width: 90%;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+} */
+
+details div {
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	padding: 1.5em;
+}
+
+details div > * + * {
+	margin-top: 1.5em;
+}
+
+details + details {
+	margin-top: .5rem;
+}
+
+summary {
+	list-style: none;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+summary {
+	border: 2px solid #000;
+	padding: .75em 1em;
+	cursor: pointer;
+	position: relative;
+	padding-left: calc(1.75rem + .75rem + .75rem);
+}
+
+summary:before {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: .75rem;
+	content: "↓";
+	width: 1.75rem;
+	height: 1.75rem;
+	background-color: #000;
+	color: #FFF;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+details[open] summary {
+	background-color: #eee;
+}
+
+details[open] summary:before {
+	content: "↑";
+}
+
+summary:hover {
+	background-color: #eee;
+}
+
+a {
+	color: inherit;
+	font-weight: 600;
+	text-decoration: none;
+	box-shadow: 0 1px 0 0;
+}
+
+a:hover {
+	box-shadow: 0 3px 0 0;
+}
+
+code {
+	font-family: monospace;
+	font-weight: 600;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col-1"><img src="logo.jpg" style="height:50px;"></div>
+        <div class="col-11" style="height: 50px;" >
+            <div class="d-flex justify-content-evenly lign-items-end" style="padding-top: 10px;">
+                <button type="button" class="btn btn-primary">Home</button>
+                <button type="button" class="btn btn-primary">About</button>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        courses
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="programming.html" style="background-color:royalblue; color:whitesmoke;">programming languages</a> </li>
+                        <li><a class="dropdown-item" href="#" style="background-color:royalblue; color:whitesmoke;">Artificial intelligence</a></li>
+                        <li><a class="dropdown-item" href="#" style="background-color:royalblue; color:whitesmoke;">Trending courses</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary">Register</button>
+                <button type="button" class="btn btn-primary">Book demo</button>
+                <button type="button" class="btn btn-primary">Certificate</button>
+                <button type="button" class="btn btn-primary">gallery</button>
+                <button type="button" class="btn btn-primary">contacts</button>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="row" style="background-color:crimson; ">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb" style="margin-left:300px;">
+            <li class="breadcrumb-item"><a href="home.html" style="font-size:20px; color:white">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page" style="font-size:20px; color:white">programming languages</li>
+        </ol>
+    </nav>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <img src="banner.jpg">
+    </div>
+
+    <br>
+    <h1>Java Training Course in Noida, Join Best Institute 2021</h1>
+    <img src="star.jpg"><h7>4.9 out of 5 based on 17053 students rating</h7>
+</div>
+<br>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-8" style="color:grey; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20px; line-height: 1.9; border:1px solid #999; text-align: justify;">
+
+            TechVidya is one of the oldest job oriented Best IT & Software training Institute in Noida located at Sector 15, nearby Metro Station founded by academicians and managed by the highly experienced professional group of partners has already nurtured numerous students. Over the last 11 years, we have acquired a distinct reputation for providing high-quality professionals to the industry. On TechVidya you can get online classes, Specializations, global certificates and degrees from numerous world-class universities and companies, including: Google, IBM, Microsoft, Amazon, Tally and more. The Institute offers IT & Software training for graduate and undergraduate students in the areas of Professional Courses like Python, Data Science, Artificial Intelligence, AWS, Salesforce, Cloud Computing, Hadoop, Oracle, Linux, JAVA, Android, DevOps, Machine Learning, IoT, Tally, AngularJS, Web Designing & Development etc. We are expertise in providing online IT & Software Training as well as Offline Training to our students in Noida. Complete IT & Software Training provided by Techvidya is designed as per the Industrial Requirement with Live Projects. Every topic covered under our IT & Software Training is in most practical way with real-time examples. At TechVidya, we offer our students with classroom training, corporate training and online training for IT & Software Programs. We have run both the batches for weekday and weekend that help our students to choose convenient batch as per there requirement. Ideally located, with the great ambience and highly motivated staff makes TechVidya as a result oriented IT & Software Training Institute in Noida.
+        </div>
+        <div class="col-4" style="border:1px solid #999; margin: left 2px;"><img src="sideimg.jpg" style="height:700px"></div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;"  >
+        <h1 style="padding:8px">
+            Join Best Java Training Institute in Noida
+        </h1>
+    </div>
+
+    <p style="color:grey; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20px; line-height: 1.9; border:1px solid #999; text-align: justify;">
+
+
+        As Best JAVA Training Institute in Noida, We Designed our JAVA syllabus in such a way that it's compliant with the real world requirements for both beginners to advanced level students. Our JAVA Course is constructed as per the Current Industry Standard with Live Project Based Training. At TechVidya, we offering a comprehensive and one-to-one JAVA training program to our students. We cover all of JAVA related topics more practically and easily manner with relevant examples. We help our students to dream high and how to achieve it. Welcome to the board, enrolled with us for the most demanding skill in the world. JAVA Training in Noida by Techvidya will help to make your career to a new height.
+
+        When anybody looking for JAVA Training institute in Noida, they will be looking for an institute which have perfection to deliver JAVA content to there students with relevant and real-based examples. We, at TechVidya, are the Best JAVA Training Institute in Noida for you because we have more than 10+ years of expertise in providing JAVA training as per industry requirement with live project. Our faculties are well experience in providing JAVA training and expertise on there core. Even when you start as very beginner level to learn JAVA, you will become an JAVA Developer once you complete our JAVA Certification.
+    </p>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <img src="register.jpg" style="max-width: 1500px;">
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h1 style="padding:8px">Upgrade yourself 2400+ Students Already Trained and Placed</h1>
+    </div>
+
+
+    <div class="row" style="background-color:lightgray; padding: 30px;">
+        <div class="col"><input id="inputname" type="text" placeholder="enter your name"></div>
+        <div class="col"><input id="inputmobile" type="number" placeholder="enter you mobile no"></div>
+        <div class="col"><input id="inputmail" type="email" placeholder="enter your email"></div>
+        <div class="col"><button type="button" class="btn btn-primary">enquiry now</button></div>
+
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <img src="register.jpg" style="max-width: 1500px;">
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h2 style="padding:8px">Java Introduction</h2>
+    </div>
+    <div class="row">
+        <p style="color:grey; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20px; line-height: 1.9; border:1px solid #999; text-align: justify;">
+
+            JAVA was developed by Sun Microsystems Inc in 1991 and later acquired by Oracle Corporation. It was developed by James Gosling and Patrick Naughton. It is a simple programming language. Writing, compiling and debugging a program is easy in JAVA. It helps to create modular programs and reusable code.
+
+            Main Features of JAVA:
+
+            Java is a platform independent language Compiler(javac) converts source code (.java file) to the byte code (.class file). As mentioned above, JVM executes the bytecode produced by compiler. This byte code can run on any platform such as Windows, Linux, Mac OS etc. Which means a program that is compiled on windows can run on Linux and vice-versa. Each operating system has different JVM, however the output they produce after execution of bytecode is same across all operating systems. That is why we call java as platform independent language.
+
+            Java is an Object Oriented Programming Language:
+
+            Object oriented programming is a way of organizing programs as collection of objects, each of which represents an instance of a class.
+
+            4 main concepts of Object Oriented programming are:
+
+            Abstraction
+            Encapsulation
+            Inheritance
+            Polymorphism
+            Simple
+
+            Java is considered as one of simple language because it does not have complex features like Operator overloading, Multiple inheritance, pointers and Explicit memory allocation.
+        </p>
+    </div>
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h2 style="padding:8px">Java Training Syllabus</h2>
+    </div>
+    <div class="row">
+        <p style="color:grey; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20px; line-height: 1.9; border:1px solid #999; text-align: justify;">
+            Java training syllabus designed by TechVidya, Noida is completely based on the current industrial requirement of the companies with live project work. We Provide complete java training in noida from beginner to advanced level.
+        </p>
+    </div>
+    <div class="container">
+        <div>
+            <details open>
+                <summary>
+                    Introduction to java
+                </summary>
+                <div>
+                    <ul>
+                        <li>  Introducon of java </li>
+                        <li>  History of java </li>
+                        <li> Features of java</li>
+                        <li>  Java v/s c++ language</li>
+                        <li>  JDK, JVM, JRE, JIT</li>
+                        <li>  Internal Details of JVM </li>
+                        <li>  Java’s Bytecode (Magic Code)</li>
+                        <li>  Installing Java </li>
+                    </ul>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    java fundamentals
+                </summary>
+                <div>
+                    <ul>
+                        <li> Variables and data types</li>
+                        <li>  Operators</li>
+                        <li>  Control Statements</li>
+                        <li> Arrays</li>
+                        <li> Loops</li>
+                    </ul>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    Object Oriented programming
+                </summary>
+                <div>
+                    <ul>
+                        <li> Class Fundamentals</li>
+                        <li> Object & Object Reference</li>
+                        <li> Object Lifeme and Garbage Collection</li>
+                        <li>   Creating And Operang Objecng </li>
+                        <li>  Constructor & Initialization on Code Block </li>
+                        <li>   Access Control, Modifiers Method </li>
+                        <li>  Nested, Inner Classes </li>
+                    </ul>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    Package
+                </summary>
+                <div>
+                    <ul>
+                        <li>	 Organizing Classes and Interfaces in Packages </li>
+                        <li>  Packages as Access Protect on </li>
+                        <li>  Defining Package </li>
+                        <li> CLASS PATH Seng For Packages </li>
+                        <li>  Making Jar Files For Library Pakages</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="d-flex justify-content-evenly style="padding:20px; margin-top:10px ">
+        <button type="button" class="btn btn-primary" style="margin-top: 10px;">Download Syllabus</button>
+
+        <button type="button" class="btn btn-success" style="margin-top: 10px;">Quick enquiry</button>
+    </div>
+</div>
+<br>
+<div class="container" >
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h1 style="padding:8px">Upgrade yourself 2400+ Students Already Trained and Placed</h1>
+    </div>
+    <div class="row">
+        <img src="register.jpg" style="max-width: 1500px;">
+    </div>
+    <br>
+    <div class="container" style="background-color:lightgray; padding: 30px;" >
+        <div class="row" style="background-color:lightgrey;">
+            <div class="col"><input id="inputname" type="text" placeholder="enter your name"></div>
+            <div class="col"><input id="inputmobile" type="number" placeholder="enter you mobile no"></div>
+            <div class="col"><input id="inputmail" type="email" placeholder="enter your email"></div>
+            <div class="col"><button type="button" class="btn btn-primary">enquiry now</button></div>
+        </div>
+    </div>
+</div>
+<div class="container" style="border:1px solid gray">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h1 style="padding:8px">Tech-Vidya placement for the month-May 2022</h1>
+    </div>
+    <p style="text-align:center ; text-align:justify ;color:gray; line-height:1.9; font-size:larger">At TechVidya, we always try to place our students at the best organization by providing them with proper training & exploring there skills. We heartily Congratulations! to our gems to be placed in the month of May 2022.</p>
+    <div class="row">
+        <div class="col"><img src="placement.jpg"></div>
+        <div class="col"><img src="placement.jpg"></div>
+        <div class="col"><img src="placement.jpg"></div>
+        <div class="col"><img src="placement.jpg"></div>
+    </div>
+    <div class="row">
+        <div class="col"><img src="placement.jpg"></div>
+        <div class="col"><img src="placement.jpg"></div>
+        <div class="col"><img src="placement.jpg"></div>
+        <div class="col"><img src="placement.jpg"></div>
+    </div>
+</div>
+<div class="container" style="border:1px solid gray">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h3 style="padding:8px">Java Current Job Openings</h3>
+    </div>
+    <p style="text-align:center ; text-align:justify ;color:gray; line-height:1.9; font-size:large">We are currently available with below-mentioned vacancies ready available with us. If you are looking for a placement and interested you can send your resume to us - placements@techvidya.education</p>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="card" style="width: 600px;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#999 ;line-height:1.9;">Company Name: Markit India Services Private Limited</h5>
+                    <h5 class="card-subtitle mb-2 " style="color:black; background-color:bisque; line-height:1.9; ">Job Title: Java Developer</h5>
+                    <p class="card-text " style="line-height:1.9; color:#999" >Experience Required: 7-9 years <br>
+
+                        Location: Sector-62, Noida
+                        <br>
+
+                        Job Profile: Implementation of financial services software using enterprise Java, RDBMS and modern web technologies.
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card" style="width: 600px;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#999 ;line-height:1.9;">Company Name: Innodata India Pvt. Ltd.</h5>
+
+                    <h5 class="card-subtitle mb-2 " style="color:black; background-color:bisque; line-height:1.9; ">Job Title: Java Lead Developer</h5>
+
+                    <p class="card-text " style="line-height:1.9; color:#999">  Experience: 4-7 years <br>
+
+                        Location: Sector-62, Noida <br>
+
+                        Job Profile: Work on advanced knowledge of J2EE and server side technologies Need to work extensively on REST APIs.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-6">
+            <div class="card" style="width: 600px;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#999 ;line-height:1.9;">Company Name: Markit India Services Private Limited</h5>
+                    <h5 class="card-subtitle mb-2 " style="color:black; background-color:bisque; line-height:1.9; ">Job Title: Java Developer</h5>
+                    <p class="card-text " style="line-height:1.9; color:#999" >Experience Required: 7-9 years <br>
+
+                        Location: Sector-62, Noida
+                        <br>
+
+                        Job Profile: Implementation of financial services software using enterprise Java, RDBMS and modern web technologies.
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card" style="width: 600px;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#999 ;line-height:1.9;">Company Name: Innodata India Pvt. Ltd.</h5>
+
+                    <h5 class="card-subtitle mb-2 " style="color:black; background-color:bisque; line-height:1.9; ">Job Title: Java Lead Developer</h5>
+
+                    <p class="card-text " style="line-height:1.9; color:#999">  Experience: 4-7 years <br>
+
+                        Location: Sector-62, Noida <br>
+
+                        Job Profile: Work on advanced knowledge of J2EE and server side technologies Need to work extensively on REST APIs.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h2 style="padding:8px">Our Top Placement Parteners</h2>
+    </div>
+    <div class="row">
+        <img src="partner.jpg" border="1px solid gray">
+    </div>
+</div>
+<br>
+<div class="container" style="border:1px solid gray">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h2 style="padding:8px">How Tech-Vidya Placement Process Works?</h2>
+    </div>
+    <p style="text-align:center ; text-align:justify ;color:gray; line-height:1.9; font-size:20px">As an industry leader in noida to provide technical training in various software and live project work, TechVidya also leads in rendering placement assistance to our students with the help of dedicated placement cell. We help our students to get a foothold in the corporate world by design their resume as per the latest industry need. When a student completes training with us, we also add value to candidates skill by organizing personality development sessions which also include a mock interview, discussion & presentation skill etc. These add on skills help our candidates to present themselves confidently at the time of actual interview. We believe in perfection and that's why providing quality education along with required industries skill which adds value to our student's growth and once there course is completed they are fully ready for industry to face any challenges. Only proper knowledge and skill helps anybody to success in life and its the only formula we implement in our students so that they able to achieve their dream jobs in companies like HCL, TCS, Wipro, Accenture, IBM, Oracle etc.</p>
+    <img src="hiring.jpg" style="width:1200px; height:500px">
+</div>
+<div class="container">
+    <div class="row">
+        <img src="register.jpg">
+    </div>
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h1 style="padding:8px">Upgrade yourself 2400+ Students Already Trained and Placed</h1>
+    </div>
+
+
+    <div class="row" style="background-color:lightgray; padding: 30px;">
+        <div class="col"><input id="inputname" type="text" placeholder="enter your name"></div>
+        <div class="col"><input id="inputmobile" type="number" placeholder="enter you mobile no"></div>
+        <div class="col"><input id="inputmail" type="email" placeholder="enter your email"></div>
+        <div class="col"><button type="button" class="btn btn-primary">enquiry now</button></div>
+
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h3 style="padding:8px">TechVidya Java Certification </h3>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-6" >
+
+            <img src="certificate.jpg" style="height:550px; width:600px;">
+        </div>
+        <div class="col-6">
+            <div class="d-flex flex-column bd-highlight mb-3">
+                <div class="p-2 bd-highlight">
+                    <div class="card text-dark bg-light mb-3" style="max-width: 700px;">
+                        <div class="card-header">GET TRAINED</div>
+                        <div class="card-body">
+
+                            <p class="card-text" style="color:#999 ;line-height:1.9;">TechVidya Institute Offers best java training in noida by highly skilled & professional industry experts.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="p-2 bd-highlight">
+                    <div class="card text-dark bg-light mb-3" style="max-width: 700px;">
+                        <div class="card-header">GET EMPLOYED</div>
+                        <div class="card-body">
+
+                            <p class="card-text" style="color:#999 ;line-height:1.9;">TechVidya Institute Offers best java training in noida by highly skilled & professional industry experts.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="p-2 bd-highlight">
+                    <div class="card text-dark bg-light mb-3" style="max-width: 700px;">
+                        <div class="card-header"> GET CERTIFIED</div>
+                        <div class="card-body">
+
+                            <p class="card-text" style="color:#999 ;line-height:1.9;">TechVidya Institute offers a wide range of java certification in noida designed to take your career to the next level.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+    <h2 style="padding:8px">Tech-Vidya Certification Benefits</h2>
+</div>
+<img src="benefits.jpg" style="width:1300px">
+<br>
+<br>
+<div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+    <h3 style="padding:8px">Benefits to Learn Java Developer</h3>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-6"><img src="why-java.png" style="padding:25px"></div>
+        <div class="col-6"><p >
+
+
+            <li style="color:#999 ;line-height:1.9;"> Java is Easy to learn </li>
+            <li style="color:#999 ;line-height:1.9;"> Java is an Object-Oriented Programming Language</li>
+            <li style="color:#999 ;line-height:1.9;"> Java has Rich API</li>
+            <li style="color:#999 ;line-height:1.9;">Java have Powerful development tools e.g., Eclipse, Netbeans</li>
+            <li style="color:#999 ;line-height:1.9;">Java have Great collection of Open Source libraries</li>
+            <li style="color:#999 ;line-height:1.9;"> Java have Wonderful Community Support</li>
+            <li style="color:#999 ;line-height:1.9;"> Java is FREE to use</li>
+            <li style="color:#999 ;line-height:1.9;">Java have Excellent documentation support - Javadocs</li>
+            <li style="color:#999 ;line-height:1.9;"> Java is Platform Independent</li>
+            <li style="color:#999 ;line-height:1.9;"> Java is Secure</li>
+
+
+            </p></div>
+    </div>
+</div>
+<div class="container">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h3 style="padding:8px">Java Job Opportunities</h3>
+    </div>
+    <div class="row" >
+        <img src="java-job-opportunities.png" style="border:1px solid gray">
+    </div>
+    <div class="row">
+        <p style="color:#999 ;line-height:1.9; border:1px solid gray;">
+
+
+            20 years of Java and the success party continues. Accordingly to TIOBE programming community index-2019, Java has continued to grow and gaining about 8% share since 2015. Java named as the programming language of the year. The TIOBE index is based on search engine statistics and factors such as the number of skilled engineers world-wide, courses and third party vendors using the programming language. This is not the first time that Java has won the title of most demanding programming language.
+
+            Widely believed to be the ‘most reliable programming language’ in the developer community, Java continues to grow in usage and popularity. This has a telling implication on Java career opportunities with demand for Java developers expected to sustain in the years to come.
+
+            Here are some of the job roles that are available for a professional with Java skills:
+
+            Java Developer
+            Java Architect
+            Web Developer
+            Database Administrator
+
+            Java Programmer Skills
+
+            A top-notch Java programmer, will be proficient in the following skills:
+
+            Enterprise Java Beans
+            Oracle database SQL and JDBC
+            XML,X query, XSL
+            J2EE framework
+            JSP
+            Service Oriented Architecture
+            Java based Web services
+            Java Servlet Technology
+
+            Java career opportunities are aplenty all over the globe. A quick search on Indeed.com reveals that reputed companies such as Amazon, IBM, Microsoft, Oracle, Cisco Systems, Akamai Technologies, JPMorgan Chase and Hewlett Packard Enterprise among others are looking for Java developers. The time is ripe to up-skill and take advantage of the Java career opportunities that come your way.
+
+        </p>
+    </div>
+</div>
+<img src="register.jpg" style="width:1300px">
+<div class="container" style="background-color:lightgray; padding: 30px;" >
+    <div class="row">
+        <div class="col"><input id="inputname" type="text" placeholder="enter your name"></div>
+        <div class="col"><input id="inputmobile" type="number" placeholder="enter you mobile no"></div>
+        <div class="col"><input id="inputmail" type="email" placeholder="enter your email"></div>
+        <div class="col"><button type="button" class="btn btn-primary">enquiry now</button></div>
+    </div>
+</div>
+</div>
+<br>
+<div class="container">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h2 style="padding:8px">Why Choose Us?</h2>
+    </div>
+</div>
+<div class="container" style="border:1px solid gray">
+    <div class="row">
+        <div class="col" style="color:#999; line-height:1.9; font-size:20px"><ul>
+            <li>Most reputed IT training institute in Noida.</li>
+            <li>IT Course is constructed as per the IT industry standard.</li>
+            <li>Most reputed IT training institute in Noida.</li>
+            <li>IT Course is constructed as per the IT industry standard.</li>
+            <li>Most reputed IT training institute in Noida.</li>
+            <li>IT Course is constructed as per the IT industry standard.</li>
+            <li>Most reputed IT training institute in Noida.</li>
+            <li>IT Course is constructed as per the IT industry standard.</li>
+            <li>Most reputed IT training institute in Noida.</li>
+            <li>IT Course is constructed as per the IT industry standard.</li>
+            <li>Most reputed IT training institute in Noida.</li>
+            <li>IT Course is constructed as per the IT industry standard.</li>
+        </ul></div>
+        <div class="col"><img src="why.jpg"></div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h3 style="padding:8px">Our Trainer's Profile</h3>
+    </div>
+    <div class="row">
+        <p style="color:#999 ;line-height:1.9; text-align:justify ; border:1px solid gray">
+            At TechVidya, We ensure our trainers are fully up-to-date to the content and having a handful knowledge of real-time projects and assignments of real world scenarios. Our Trainers at Techvidya are Certified Working Professionals with 10+ years of related experience. TechVidya's Java Trainers are experts in their field of domain and constantly upgrade themselves with new tools to impart the best training of a real working environment to the candidates. Our most of the Trainers are working in Multinational Companies like HCL, HP, Microsoft, TCS, IBM, Birlasoft etc. The quality of education is depends on the trainer experience and institution content. We at TechVidya, take care that our students get the maximum output with the right content delivery.
+        </p>
+    </div>
+</div>
+<div class="container">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h2 style="padding:8px">Frequently Asked Questions</h2>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne" style="font-size:20px; color:black">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="font-size:25px; color:black;border:1px solid gray;background-color: lightgray;">
+                    Which is the best IT/software training institute in noida?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">TechVidya is Noida's No.1 Software Training Institute and our statistics tell our story. We have 12+ years of experience in providing IT Training in noida and almost completed 320+ batches. In this period of time, we have trained 4000+ students with the highest placement record of 2430+ candidates. For enquiry, you can reach us @ +91-8375966700.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="font-size:25px; color:black; border:1px solid gray;background-color: lightgray; ">
+                    What is fee of IT/software coueses?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Our IT/Software Course fees is quite very reasonable in the market while measuring all the factors like course quality, trainers experience, placement assistance etc. Occasionally, TechVidya also launching various promotional & festive offers on IT/Software courses fees where students can get further discount at the time of admission. There is special discount for group students also depending on size of students group getting enrolled with us. The fees is subject to non-refundable.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"
+                        style="font-size:25px; color:black; border:1px solid gray; background-color: lightgray;">
+                    What is duration of IT/software course in Tech-Vidya?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">IT/Software Course conducted by TechVidya is generally 2-3 months training program depending on the candidate qualification and experience. TechVidya also providing fast-track classes of DevOps to working professionals or students of which the standard time duration is 1-2 months. The program is designed in such a way that it is easy to learn and understandable to students including live project training.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row" style="text-align:center; background-color:darkblue; color:white; margin-top: 1px;">
+        <h2 style="padding:8px">Similar Courses You're Looking For</h2>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="spring-framework.png" class="card-img-top" alt="...">
+
+
+                <div class="card-body"  style="color:white; background-color:royalblue; text-align:center">
+                    <a href="#" class="card-link">spring framework</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="hibernate-framework.png" class="card-img-top" alt="...">
+
+
+                <div class="card-body"  style="color:white; background-color:royalblue; text-align:center">
+                    <a href="#" class="card-link">hibernet framework</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4"><div class="card" style="width: 18rem;">
+            <img src="struts-framework.png" class="card-img-top" alt="...">
+
+
+            <div class="card-body"  style="color:white; background-color:royalblue; text-align:center">
+                <a href="#" class="card-link">struts framework</a>
+
+            </div>
+        </div></div>
+    </div>
+</div>
+<br>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
